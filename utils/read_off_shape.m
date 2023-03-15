@@ -1,5 +1,5 @@
 function shape = read_off_shape(offfullname)
-    fid = fopen(offfullname,'rt');
+    fid = fopen(offfullname, 'rt');
     off = textscan(fid, '%s', 1);
     nv = textscan(fid, '%d', 1);
     nv = nv{1};

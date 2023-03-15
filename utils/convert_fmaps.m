@@ -17,6 +17,9 @@ end
 for i = 1:ns
     for j = 1:ns
         if G(j, i) ~= 0
+            disp([i, j]);
+	        % disp(neig);
+	        % disp(size(Shapes{i}.evecs));
             F{i, j} = Shapes{j}.evecs(:, 1:neig)\Shapes{i}.evecs(Maps{j, i}, 1:neig);
         end
     end
